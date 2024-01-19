@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>In a box</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+body {
+  margin: 0;
+   background-color:floralwhite;
+  font-family: cursive;;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: gray;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+ .container-fluid{
+    text-align: center;
+  text-decoration: overline;
+  }
+
+body{
+  background-color:floralwhite;
+  font-family: cursive;
+}
+
+.button {
+  background-color: green; 
+  border: none;
+  color: white;
+  padding: 3px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+#backtop {
+  /* (A) BOTTOM RIGHT CORNER */
+  position: fixed;
+  bottom: 30px; right: 30px;
+  z-index: 999;
+
+  /* (B) HIDDEN BY DEFAULT */
+  visibility: none;
+  opacity: 0;
+
+  /* (C) COSMETICS */
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+/* (D) SHOW BUTTON */
+#backtop.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+</style>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+// (A) SMOOTH SCROLL TO TOP
+function totop () {
+  window.scroll({
+    top: 0, left: 0, behavior: "smooth"
+  });
+}
+
+// (B) SHOW/HIDE BUTTON
+function togtop () {
+  if (window.scrollY >= 100) {
+    document.getElementById("backtop").classList.add("show");
+  } else {
+    document.getElementById("backtop").classList.remove("show");
+  }
+}
+window.addEventListener("scroll", togtop);
+window.addEventListener("resize", togtop);
+
+</script>
+<body>
+
+<div class="topnav" id="myTopnav">
+  <a href="index.html" class="active">Home</a>
+ <a href="guide.html"> guide</a>
+  <a href="backathomeset.html">bake at home set</a>
+   <a href="ingredient.html">ingredient</a>
+    <a href="planner.html"> planner</a>
+     <a href="nutri.html">nutritional infromation app</a>
+      <a href="gifts.html">gifts box </a>
+  <a href="packages.html">Packages</a>
+  <a href="contact.html">Contact</a>
+  <a href="aboutus.html">About Us</a>
+  <a href="login.html">Login</a>
+  <a href="register.html">Register</a>
+
+
+
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+<br>
+<div class="container-fluid" style="text-align:center;">
+  <h3> Receipe of In a box</h3>
+  <p style="color: purple;">"If you fail to plan, you plan to fail – you cannot reach your goal without a plan."</p>
+  <p style="color: purple;"><a href="#1">Pumpkin Candy</a>__<a href="#2">Crispy Tofu</a>__<a href="#3">Sweet Yeast Dough</a>__<a href="#4">Chilli-Potato sauce</a>__<a href="#5">Pork with garlic sauce</a> </p>
+</div>
+
+
+<img src="up-button.png" id="backtop" onclick="totop()"/>
+
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-6">
+		<img src="img/pic4.jpg" style="float: left;border: 1px solid; margin: 0px 0px 15px 20px;" width="300" height="300">
+  <img src="https://theplantbasedwok.com/wp-content/uploads/2019/10/IMG_0117-768x1075.jpg" style="float: left;border: 1px solid; margin: 0px 0px 15px 20px;" width="300" height="300">
+  <img src="https://theplantbasedwok.com/wp-content/uploads/2019/10/IMG_0128-768x1075.jpg" style="float: left;border: 1px solid; margin: 0px 0px 15px 20px;" width="300" height="300">	
+		</div>
+
+		<div class="col-md-6">
+			<h2 style="color:green;">Pumpkin Candy</h2><br>
+<h3>Meal planning</h3>
+<div>Pumpkin cakes (nan gua bing) are a traditional fried Chinese dessert, often eaten during holidays.</div>
+</p>
+<br>
+<h3>HOW TO MAKE PUMPKIN CAKES</h3>
+<div>(1)Make the pumpkin puree. Peel pumpkin and remove seeds, then cut into thin slices.   </div><hr>
+<div>
+  (2)Mix the dough. Add glutinous rice flour in increments, until the mixture forms a putty-like dough. The amount of flour you need to use might vary based on the water content of your pumpkin.
+</div><hr>
+<div>
+(3)Form the cakes. Divide the dough into pieces and roll into balls about 1-inch in diameter (40g) then flatten into a disc with 1/2 inch thickness. For red bean stuffed cakes,  
+</div><hr>
+<div>
+  (4)Fry the cakes. To deep-fry, heat oil in a deep pan or wok until bubbles form around an inserted chopstick, around 310F. Place cakes carefully into the oil and fry to a golden 
+</div><hr>
+<div >
+	<h3>Rating
+  <span>★</span>
+  <span >★</span>
+  <span>★</span>
+  <span>★</span>
+  <span >★</span>
+  
+</h3> 
+</div>
+<div style="text-align:center"><h4> Price- 3.99 $</h4>
+    <a href="register.html"><button class="button">Order</button></a>
+<a href=""><button class="button">Cancel</button></a> 
+</div>
+<ul>
+<li>
+  <span>Prep Time: 30</span>
+</li>
+<li>
+  <span>Cook Time:15</span>
+</li>
+<li>
+  <span>Total time:45 min</span>
+</li>
+</ul>
+		</div></div></div></div>
+	</div>
+</div>
+<br><hr>
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-6">
+		<img src="img/cripsytofu.jpg" style="float: left;border: 1px solid; margin: 0px 0px 15px 20px;" width="300" height="300">
+  <img src="https://frommybowl.com/wp-content/uploads/2019/01/How_To_Crispy_Tofu_Vegan_GlutenFree_OilFree_FromMyBowl-10.jpg" style="float: left;border: 1px solid; margin: 0px 0px 15px 20px;" width="300" height="300">
+  <img src="https://omnivorescookbook.com/wp-content/uploads/2019/11/1911_Crispy-Marinated-Tofu_550.jpg" style="float: left;border: 1px solid; margin: 0px 0px 15px 20px;" width="300" height="300">	
+		</div>
+
+		<div class="col-md-6">
+			<h2 style="color:green;">Crispy tofu</h2><br>
+<h3>Meal planning</h3>
+<div>Fry tofu in a coating of smoked paprika, garlic and seasoning to make these crispy tofu bites. Eat as a snack or as a starter or side dish in a veggie feast</div>
+</p>
+<br>
+<h3>HOW TO MAKE CRISPY TOFU</h3>
+<div>(1)Preheat the oven to 400 degrees Fahrenheit and line a large, rimmed baking sheet with parchment paper to prevent the tofu from sticking.</div><hr>
+<div>
+  (2)To prepare the tofu: Drain the tofu and use your palms to gently squeeze out some of the water..
+</div><hr>
+<div>
+(3)Line a cutting board with a lint-free tea towel or paper towels, then arrange the tofu in an even layer on the towel(s). Fold the towel(s) over the cubed tofu, then place something heavy on top .
+</div><hr>
+<div>
+  (4)Transfer the pressed tofu to a medium mixing bowl and drizzle with the olive oil and tamari. Toss to combine. 
+</div><hr>
+<div>
+ (5) Tip the bowl of tofu over onto your prepared baking sheet and arrange the tofu in an even layer. Bake for 25 to 30 minutes, tossing the tofu halfway
+</div><hr>
+<div >
+<h3>Rating
+  <span>★</span>
+  <span >★</span>
+  <span>★</span>
+  <span>★</span>
+  <span >&#11240;</span>
+  
+</h3> 
+</div>
+<div style="text-align:center"><h4> Price- 0.99 $</h4>
+    <a href="register.html"><button class="button">Order</button></a>
+<a href=""><button class="button">Cancel</button></a> 
+</div>
+<ul>
+<li>
+  <span>Prep Time: 5</span>
+</li>
+<li>
+  <span>Cook Time:10</span>
+</li>
+<li>
+  <span>Total time:15 min</span>
+</li>
+</ul>
+
+		</div></div></div></div>
+	</div>
+</div>
+<br>
+<hr>
+
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-6">
+		<img src="img/bun.jpg" style="float: left;border: 1px solid; margin: 0px 0px 15px 20px;" width="300" height="300">
+  <img src="https://sugargeekshow.com/wp-content/uploads/2020/01/sweet-dough-recipe-4.jpg" style="float: left;border: 1px solid; margin: 0px 0px 15px 20px;" width="300" height="300">
+  <img src="https://sugargeekshow.com/wp-content/uploads/2020/01/sweet-dough-recipe-3.jpg" style="float: left;border: 1px solid; margin: 0px 0px 15px 20px;" width="300" height="300">	
+		</div>
+
+		<div class="col-md-6">
+			<h2 style="color:green;">Basic Sweet Yeast Dough Recipe</h2><br>
+<h3>Meal planning</h3>
+<div>y favorite go-to sweet roll dough for just about any kind of sweet roll or bread. </div>
+</p>
+<br>
+<h3>HOW TO MAKE Sweet Yeast Dough</h3>
+<div>(1)In a large bowl, stir together the yeast and milk until dissolved. Beat in the sugar, butter, salt and eggs until well combined. </div><hr>
+<div>
+  (2)Put your flour in the mixing bowl with the milk/yeast mixture and stir until combined with the dough hook...
+</div><hr>
+<div>
+(3)If baking now, continue by placing the kneaded dough into a greased bowl. Cover and let rise for 1 hour or until doubled in size. The length of time needed to rise will depend on how warm the room is. Ideal rising temperature is 72 F.
+</div><hr>
+<div>
+  (4)When the dough has risen, punch dough down with a floured hand and shape and bake as desired.
+</div><hr>
+<div>
+ (5) Proof in a warm area for 90 minutes or until dough doubles in size.Shape dough according to the recipe you are following. 
+</div><hr><br><br>
+<div >
+<h3>Rating
+  <span>★</span>
+  <span >★</span>
+  <span>★</span>
+  <span>★</span>
+  <span >&#11240;</span>
+  
+</h3> 
+</div>
+<div style="text-align:center"><h4> Price- 0.99 $</h4>
+    <a href="register.html"><button class="button">Order</button></a>
+<a href=""><button class="button">Cancel</button></a> 
+</div>
+<ul>
+<li>
+  <span>Prep Time: 5</span>
+</li>
+<li>
+  <span>Cook Time:10</span>
+</li>
+<li>
+  <span>Total time:15 min</span>
+</li>
+</ul>
+
+		</div></div></div></div>
+	</div>
+</div>
+<br>
+<hr>
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-6">
+		<img src="img/chilipotato.jpg" style="float: left;border: 1px solid; margin: 0px 0px 15px 20px;" width="300" height="300">
+  <img src="https://www.vegrecipesofindia.com/wp-content/uploads/2019/01/chilli-potato11.jpg" style="float: left;border: 1px solid; margin: 0px 0px 15px 20px;" width="300" height="300">
+  <img src="https://www.vegrecipesofindia.com/wp-content/uploads/2019/01/chilli-potato30.jpg" style="float: left;border: 1px solid; margin: 0px 0px 15px 20px;" width="300" height="300">	
+		</div>
+
+		<div class="col-md-6">
+			<h2 style="color:green;">Chili-potato</h2><br>
+<h3>Meal planning</h3>
+<div>Chilli potato is a spicy starter snack from the indo-Chinese cuisine where fried potatoes are tossed in a spicy, sour and slightly sweet chilli sauce. This is a semi-dry version and is simply addictive and tasty. </div>
+</p>
+<br>
+<h3>HOW TO MAKE CHILI-POTATO</h3>
+<div>(1)Firstly rinse 3 medium sized potatoes (250 to 275 grams) well in water. Chop the potato in slices having 0.3 to 0.5 cm thickness.Then cut each slice in sticks having 1 cm width.In a bowl take 3 cups cold water. Place the potatoes in the water for 20 to 30 minutes</div><hr>
+<div>
+  (2)Chop 1 medium sized onion. Finely chop 1 small capsicum (green bell pepper), 4 to 5 medium to large garlic cloves, 1.5 inches ginger and 1 or 2 green chillies. You can even add spring onion whites instead of onions.
+</div><hr>
+<div>
+(3)Rinse the potatoes with running water. Then drain all the water very well. Place the potatoes .
+</div><hr>
+<div>
+  (4)Heat oil for deep frying in a kadai or pan or wok. Keep a medium flame. Add the potatoes. So be carefulAs soon as you add the potatoes, stir with the frying slotted spoon, so that the potatoes do not stick to each other.Begin to fry potatoes on a medium flame.
+
+<div>
+ (5) Add the mixed sauces from the bowl. mix very well.
+</div><hr>
+<div >
+<h3>Rating
+  <span>★</span>
+  <span >★</span>
+  <span>★</span>
+  <span>&#11240;</span>
+  <span >&#11240;</span>
+  
+</h3> 
+</div>
+<div style="text-align:center"><h4> Price- 8.99 $</h4>
+    <a href="register.html"><button class="button">Order</button></a>
+<a href=""><button class="button">Cancel</button></a> 
+</div>
+<ul>
+<li>
+  <span>Prep Time: 10</span>
+</li>
+<li>
+  <span>Cook Time:30</span>
+</li>
+<li>
+  <span>Total time:40 min</span>
+</li>
+</ul>
+
+		</div></div></div></div>
+	</div>
+</div>
+<br>
+<hr>
+
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-6">
+		<img src="img/pork.jpg" style="float: left;border: 1px solid; margin: 0px 0px 15px 20px;" width="300" height="300">
+  <img src="https://thewoksoflife.com/wp-content/uploads/2017/07/pork-garlic-sauce-7.jpg" style="float: left;border: 1px solid; margin: 0px 0px 15px 20px;" width="300" height="300">
+  <img src="https://thewoksoflife.com/wp-content/uploads/2017/07/pork-garlic-sauce-9.jpg" style="float: left;border: 1px solid; margin: 0px 0px 15px 20px;" width="300" height="300">	
+		</div>
+
+		<div class="col-md-6">
+			<h2 style="color:green;">Pork with garlic sauce</h2><br>
+<h3>Meal planning</h3>
+<div>Shredded pork with garlic sauce, or Yu Xiang Rou Si, features tender pork strips stir fried with an array of colorful vegetables </div>
+</p>
+<br>
+<h3>HOW TO MAKE PORK WITH GARLIC SAUCE</h3>
+<div>(1)Add wood ear mushrooms to a medium-sized bowl and hot water to cover.</div><hr>
+<div>
+  (2)Slice the pork loin into round, 1/8” (4 mm) thick pieces. Stack the slices and further cut into 1/8” (4 mm) thick strips. Add the Shaoxing wine, peanut oil, salt, and white pepper. .
+</div><hr>
+<div>
+(3)Combine all the sauce ingredients in a medium-sized bowl. Stir to mix well and set aside.
+</div><hr>
+<div>
+  (4)At this stage, your wok should still be pretty clean, as the technique used to cook the pork is fairly low impact. But if it’s not, it’s a good idea to wash the wok and wipe it dry before starting the next phase of cooking.
+
+</div><hr>
+<div>
+ (5)Now add the ginger, garlic, and dried chili peppers. Stir for about 15 seconds. Add the wood ears, turn up the heat, and stir fry for 30 seconds (you can add a few drops of water if it’s too dry), making sure everything is well-combined. 
+<div >
+<h3>Rating
+  <span>★</span>
+  <span >★</span>
+  <span>★</span>
+  <span>★</span>
+  <span >&#11240;</span>
+  
+</h3> 
+</div>
+<div style="text-align:center"><h4> Price- 11.99 $</h4>
+    <a href="register.html"><button class="button">Order</button></a>
+<a href=""><button class="button">Cancel</button></a> 
+</div>
+<ul>
+<li>
+  <span>Prep Time: 35</span>
+</li>
+<li>
+  <span>Cook Time:5</span>
+</li>
+<li>
+  <span>Total time:40 min</span>
+</li>
+</ul>
+
+		</div></div></div></div>
+	</div>
+</div>
+<br>
+<hr>
+
+<div class="container-fluid bg-secondary text-dark mt-5 pt-5 active">
+        <div class="row px-xl-5 pt-5 active">
+            <div class="col-lg-4 col-md-12 mb-5 pr-3 pr-xl-5">
+                <a href="" class="text-decoration-none">
+                    <h1 class="mb-4 display-5 font-weight-semi-bold"><span class="text-primary font-weight-bold border border-white px-3 mr-1"></span>Food box delivery</h1>
+                </a>
+                <p>First, we eat. Then, we do everything else</p>
+                <p class="mb-2"><i class="fa fa-map-marker-alt text-primary mr-3"></i>Shwe Lan Ma, Myitkyina, Myanmar</p>
+                <p class="mb-2"><i class="fa fa-envelope text-primary mr-3"></i>thetaungkhant101@gmail.com</p>
+                <p class="mb-0"><i class="fa fa-phone-alt text-primary mr-3"></i>+95 9254381653</p>
+            </div>
+            <div class="col-lg-8 col-md-12">
+                <div class="row">
+                    <div class="col-md-4 mb-5">
+                        <h5 class="font-weight-bold text-dark mb-4">Quick Links</h5>
+                        <div class="d-flex flex-column justify-content-start">
+                            <a class="text-dark mb-2" href="index.html"><i class="fa fa-angle-right mr-2"></i>Home</a>
+                            <a class="text-dark mb-2" href="shop.html"><i class="fa fa-angle-right mr-2"></i>Our Shop</a>
+                            <a class="text-dark mb-2" href="detail.html"><i class="fa fa-angle-right mr-2"></i>Shop Detail</a>
+                            <a class="text-dark mb-2" href="cart.html"><i class="fa fa-angle-right mr-2"></i>Shopping Cart</a>
+                            <a class="text-dark mb-2" href="checkout.html"><i class="fa fa-angle-right mr-2"></i>Checkout</a>
+                            <a class="text-dark" href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwil5ICRu5b6AhXskmYCHT7EDwQYABAAGgJzbQ&ohost=www.google.com&cid=CAESa-D24X_VvYAwkYpNRrEXKvnk6HdSEQQiY4R8o10tEXHuZLmos95Y2cz7g-GbnPlGZDyewoHp_gz8kfgrEeTIDoaTZxrvAlKk3j69R4oLeBc7o_0aPzDC4Xr-moqCwnFh5todpanpwNpdrM7K&sig=AOD64_0nUYPzo1zWtrrEbtw7PldeeN3bVg&q&adurl&ved=2ahUKEwicv_qQu5b6AhU9TmwGHYsXCNUQ0Qx6BAgEEAE"><i class="fa fa-angle-right mr-2"></i>Contact Us from facebook</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-5">
+                        <h5 class="font-weight-bold text-dark mb-4">Quick Links</h5>
+                        <div class="d-flex flex-column justify-content-start">
+                            <a class="text-dark mb-2" href="index.html"><i class="fa fa-angle-right mr-2"></i>Home</a>
+                            <a class="text-dark mb-2" href="shop.html"><i class="fa fa-angle-right mr-2"></i>Our Shop</a>
+                            <a class="text-dark mb-2" href="detail.html"><i class="fa fa-angle-right mr-2"></i>Shop Detail</a>
+                            <a class="text-dark mb-2" href="cart.html"><i class="fa fa-angle-right mr-2"></i>Shopping Cart</a>
+                            <a class="text-dark mb-2" href="checkout.html"><i class="fa fa-angle-right mr-2"></i>Checkout</a>
+                            <a class="text-dark" href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwil5ICRu5b6AhXskmYCHT7EDwQYABAAGgJzbQ&ohost=www.google.com&cid=CAESa-D24X_VvYAwkYpNRrEXKvnk6HdSEQQiY4R8o10tEXHuZLmos95Y2cz7g-GbnPlGZDyewoHp_gz8kfgrEeTIDoaTZxrvAlKk3j69R4oLeBc7o_0aPzDC4Xr-moqCwnFh5todpanpwNpdrM7K&sig=AOD64_0nUYPzo1zWtrrEbtw7PldeeN3bVg&q&adurl&ved=2ahUKEwicv_qQu5b6AhU9TmwGHYsXCNUQ0Qx6BAgEEAE"><i class="fa fa-angle-right mr-2"></i>Contact Us from facebook</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-5">
+                        <h5 class="font-weight-bold text-dark mb-4">Newsletter</h5>
+                        <form action="">
+                            <div class="form-group">
+                                <input type="text" class="form-control border-0 py-4" placeholder="Your Name" required="required" />
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control border-0 py-4" placeholder="Your Email"
+                                    required="required" />
+                            </div>
+                            <div>
+                                <button class="btn btn-primary btn-block border-0 py-3" type="submit">Subscribe Now</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row border-top border-light mx-xl-5 py-4">
+            <div class="col-md-6 px-xl-0">
+                <p class="mb-md-0 text-center text-md-left text-dark">
+                    &copy; <a class="text-dark font-weight-semi-bold" href="#">Eastern Food</a>. All Rights Reserved. Designed
+                    by Thet Aung Khant Lithan
+                    <a class="text-dark font-weight-semi-bold" href="https://htmlcodex.com">HTML Codex</a>
+                </p>
+            </div>
+            <div class="col-md-6 px-xl-0 text-center text-md-right">
+                <img class="img-fluid" src="img/payments.png" alt="">
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
